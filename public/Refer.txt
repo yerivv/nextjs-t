@@ -1,0 +1,30 @@
+참고
+
+next.js 공식문서 홈페이지
+https://nextjs.org/docs
+
+
+기본 셋팅
+https://brothercoding.tistory.com/2
+
+폴더구조 및 특징
+https://brothercoding.tistory.com/9
+
+next.js 13 살펴보기 좋음. (따라해보자)
+https://mycodings.fly.dev/blog/2022-11-14-nextjs-13-first-look-and-layout
+
+
+//디렉토리 스트렉쳐
+https://nextjs.org/docs/getting-started/project-structure
+
+tailwindcss 관련
+https://velog.io/@rrrrrrrrrrrocky/Next.js-13-tailwindcss-%EC%B4%88%EA%B8%B0%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0
+
+//전역 scss설정
+https://velog.io/@ice-prince/Next.Js-%EC%97%90%EC%84%9C-Scss-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+
+//레이아웃 만들기
+https://blog.pumpkin-raccoon.com/70?category=1062972
+
+// csr, ssr
+https://velog.io/@wooseok123/Next.js-CSR-vs-SSR
