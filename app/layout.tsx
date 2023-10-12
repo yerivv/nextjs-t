@@ -1,21 +1,23 @@
 //import './globals.css'
-import type { Metadata } from 'next'
 import { Gowun_Batang } from 'next/font/google'
-//import { Inter } from 'next/font/google'
+import BasicHeader from '@/component/layout/BasicHeader'
+import BasicFooter from '@/component/layout/BasicFooter'
 
-//const inter = Inter({ subsets: ['latin'] })
 const gowunBatang = Gowun_Batang({
   subsets: ['latin'],
   weight: ['400', '700']
 })
 
-export const metadata: Metadata = {
-  title: 'next.js Study',
-  description: 'study',
+export const metadata = {
+  title: {
+    default: "김김",
+    template: "",
+  },
+  description: "그냥 나 혼자 하는 거",
   icons: {
-   // icon: 'setting-list.png'
-  }
-}
+    icon: "@/public/favicon.ico",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -25,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={gowunBatang.className}>
-        <h1>h1타이틀</h1>
-        {children}
-        <h6>h6타이틀</h6>
+        <BasicHeader />
+        <main>{children}</main>
+        <BasicFooter />
       </body>
     </html>
   )

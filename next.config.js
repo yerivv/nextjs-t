@@ -5,8 +5,8 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: `
-      @import "@/assets/styles/abstracts/_variables.scss";
-      @import "@/assets/styles/abstracts/_mixins.scss";
+      @import "@/public/styles/abstracts/_variables.scss";
+      @import "@/public/styles/abstracts/_mixins.scss";
     `, // prependData 옵션 추가
   },
 }
