@@ -1,0 +1,22 @@
+header {
+  background-color: $default-color;
+  h1 {
+    * {
+      display: block;
+      width: 200px;
+      height: 100px;
+      background-image: url(/static/images/logo.svg);
+      background-size: cover;
+      text-indent: -999em;
+      &:hover {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: $primary-color;
+  }
+}

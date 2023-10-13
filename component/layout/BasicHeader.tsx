@@ -1,7 +1,12 @@
+import Link from 'next/link'
+import '@/public/styles/layout/header.scss'
+
 export default function BasicHeader() {
   return (
     <header>
-      상단
+      <h1>
+        <Link href="/">로고</Link>
+      </h1>
     </header>
   )
 }

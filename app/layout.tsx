@@ -1,4 +1,4 @@
-//import './globals.css'
+import '@/public/styles/globals.scss'
 import { Gowun_Batang } from 'next/font/google'
 import BasicHeader from '@/component/layout/BasicHeader'
 import BasicFooter from '@/component/layout/BasicFooter'
@@ -15,7 +15,7 @@ export const metadata = {
   },
   description: "그냥 나 혼자 하는 거",
   icons: {
-    icon: "@/public/favicon.ico",
+    icon: "/favicon.ico",
   },
 };
 
@@ -25,11 +25,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body className={gowunBatang.className}>
-        <BasicHeader />
-        <main>{children}</main>
-        <BasicFooter />
+        <div className="skip-navigation">
+          <a href="#contents">본문 바로가기</a>
+        </div>
+        <div id="wrap">
+          <BasicHeader />
+          <main className="container">
+            <div id="contents" className="contents">{children}</div>
+          </main>
+          <BasicFooter />
+        </div>
       </body>
     </html>
   )
