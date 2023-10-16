@@ -1,3 +1,24 @@
-@mixin title {
-  font-size: 30px;
+@mixin mobile { /* 모바일 가로, 모바일 세로 (해상도 280px ~ 767px)*/ 
+  @media (min-width: #{$breakpoint-mobile})
+    and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet { /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+  @media (min-width: #{$breakpoint-tablet})
+    and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop { /* 노트북 & PC (해상도 1024px)*/ 
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin max-width {
+  max-width: $width-max;
+  margin: 0 auto;
 }

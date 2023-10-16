@@ -1,12 +1,6 @@
 import '@/public/styles/globals.scss'
-import { Gowun_Batang } from 'next/font/google'
 import BasicHeader from '@/component/layout/BasicHeader'
 import BasicFooter from '@/component/layout/BasicFooter'
-
-const gowunBatang = Gowun_Batang({
-  subsets: ['latin'],
-  weight: ['400', '700']
-})
 
 export const metadata = {
   title: {
@@ -26,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className={gowunBatang.className}>
+      <body>
         <div className="skip-navigation">
           <a href="#contents">본문 바로가기</a>
         </div>

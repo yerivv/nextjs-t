@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import styles from '@/public/styles/page.module.scss'
 
 export default function Home() {
   return (
