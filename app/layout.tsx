@@ -1,6 +1,6 @@
 import '@/public/styles/globals.scss'
-import BasicHeader from '@/component/layout/BasicHeader'
-import BasicFooter from '@/component/layout/BasicFooter'
+import BasicHeader from './component/layout/BasicHeader';
+import BasicFooter from './component/layout/BasicFooter';
 
 export const metadata = {
   title: {
